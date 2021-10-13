@@ -2,11 +2,16 @@
 <head>
     <meta charset="utf-8">
     <title>Marauders of Ishtakar</title>
-    <!-- Intentionally blocking here -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <script src="/js/main.js"></script>
+    <!-- Intentionally blocking here -->
+    <script>
+        if (window.localStorage.getItem("prefers-dark-mode") ||
+            window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.body.classList.add("dark");
+        }
+    </script>
     <div class='content'>
         <h3>New World</h3>
         <h1>Ishtakar</h1>
@@ -15,5 +20,7 @@
       </div>
       
       <div id='dm-toggle' class='darkmode-toggle'></div>
+      
+      <script src="/js/main.js"></script>
 </body>
 </html>
