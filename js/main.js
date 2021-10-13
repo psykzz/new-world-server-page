@@ -7,7 +7,6 @@ if (prefersDarkMode) {
   document.body.classList.add("dark");
 } else {
   document.body.classList.remove("dark");
-
 }
 element.addEventListener("click", () => {
   document.body.classList.toggle("dark");
