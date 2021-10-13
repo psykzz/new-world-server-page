@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em 2em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #333;
+  background: #f7f5eb;
+  display: flex:
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body { background: #333; color:  #f7f5eb; }
+}
+
+header {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  min-width: 600px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.subheader {
+  padding: 5px 0;
+}
+.discord {
+  margin-top: 2rem;
+  width: 130px;
+	box-sizing: border-box;
+	background: #7289DA;
+	border: none;
+	color: #fff;
+	padding: 10px 5px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.2s ease;
+  text-decoration: none;
+  align-self: center;
+}
+
+.discord:hover {
+  background: #6B7FC5;
+}
