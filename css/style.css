@@ -1,10 +1,10 @@
 :root {
     --dark-bg-color: #333;
     --light-bg-color: #f7f5eb;
-    
+  
     --dark-text-color: #f7f5eb;
     --light-text-color: #333;
-    
+  
     --text-color-white: #fff;
   }
   
@@ -18,12 +18,11 @@
   
   body {
     padding: 3em 2em;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: var(--light-text-color);
     background: var(--light-bg-color);
-    display: flex:
+    display: flex;
   }
-  
   
   body.dark {
     color: var(--dark-text-color);
@@ -50,20 +49,20 @@
   .discord {
     margin-top: 2rem;
     width: 130px;
-      box-sizing: border-box;
-      background: #7289DA;
-      border: none;
-      color: var(--text-color-white);
-      padding: 10px 5px;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: 0.2s ease;
+    box-sizing: border-box;
+    background: #7289da;
+    border: none;
+    color: var(--text-color-white);
+    padding: 10px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
     text-decoration: none;
     align-self: center;
   }
   
   .discord:hover {
-    background: #6B7FC5;
+    background: #6b7fc5;
   }
   
   .darkmode-toggle {
@@ -99,5 +98,4 @@
   body.dark .darkmode-toggle::before {
     transform: translateX(40px);
   }
-  
   
