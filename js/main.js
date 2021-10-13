@@ -6,7 +6,7 @@ if (prefersDarkMode === null) {
 }
 if (prefersDarkMode) {
   document.body.classList.add('dark');
-} else {w
+} else {
   document.body.classList.remove('dark');
 }
 element.addEventListener('click', () => {
