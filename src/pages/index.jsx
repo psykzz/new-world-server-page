@@ -7,9 +7,10 @@ import "../styles/common.css"
 
 const Index = () => (
   <>
-  <Helmet>
-    <title>Ishtakar | EU Central</title>
-  </Helmet>
+    <Helmet>
+      <title>Ishtakar | EU Central - New World</title>
+      <meta name="description" content={"Ishtakar server website of New world. Providing information, guides and in the future, company services."} />
+    </Helmet>
     <Hero />
     <Footer />
     <DarkmodeToggle />
