@@ -1,7 +1,7 @@
 .content {
   display: flex;
   max-width: 600px;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   margin-top: 30vh;
   justify-content: space-around;

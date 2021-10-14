@@ -3,6 +3,7 @@ import * as styles from "./styles.module.css"
 
 export const Footer = () => (
   <div className={styles.footer}>
-    made by psykzz | <a href="https://github.com/psykzz/ishtakar">source</a>
+    <a href="https://github.com/psykzz/ishtakar?utm_source=ishtakar.eu">source</a> | made by psykzz<br />
+    data provided by <a href="https://nwdb.info?utm_source=ishtakar.eu">nwdb.info</a> &hearts;
   </div>
 )
