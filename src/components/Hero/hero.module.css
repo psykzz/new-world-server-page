@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  min-width: 600px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 30vh;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.discord {
+  margin-top: 2rem;
+  width: 130px;
+  box-sizing: border-box;
+  background: #7289da;
+  border: none;
+  color: var(--text-color-white);
+  padding: 10px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-decoration: none;
+  align-self: center;
+}
+
+.discord:hover {
+  background: #6b7fc5;
+}

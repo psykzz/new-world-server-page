@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+:root {
+  --dark-bg-color: #333;
+  --dark-text-color: #f7f5eb;
+
+  --light-bg-color: #f7f5eb;
+  --light-text-color: #333;
+
+  --text-color-white: #fff;
+  --text-color-subtle: #999;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em 2em;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: var(--light-text-color);
+  background: var(--light-bg-color);
+}
+
+body.dark {
+  color: var(--dark-text-color);
+  background: var(--dark-bg-color);
+}
+/* 
+header {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  min-width: 600px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 30vh;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.subheader {
+  padding: 5px 0;
+} */
