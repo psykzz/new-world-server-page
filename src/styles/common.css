@@ -27,21 +27,3 @@ body.dark {
   color: var(--dark-text-color);
   background: var(--dark-bg-color);
 }
-/* 
-header {
-  flex: 1;
-}
-
-.content {
-  display: flex;
-  min-width: 600px;
-  width: 50vw;
-  margin: 0 auto;
-  margin-top: 30vh;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-}
-.subheader {
-  padding: 5px 0;
-} */
