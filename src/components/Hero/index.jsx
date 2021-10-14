@@ -41,8 +41,6 @@ export const Hero = () => {
       .then(setServerData)
   }, [])
 
-  console.log(serverData)
-
   const maintenance = serverData.status === 4
   const onlineStatus = `${serverData.connectionCount} / ${serverData.connectionCountMax} Online`
   const queue =
