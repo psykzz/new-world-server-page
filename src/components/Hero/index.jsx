@@ -41,19 +41,25 @@ export const Hero = () => {
       .then(setServerData)
   }, [])
 
-  const maintenance = serverData.status === 4
-  const onlineStatus = `${serverData.connectionCount} / ${serverData.connectionCountMax} Online`
-  const queue =
-    serverData.queueCount > 0 ? `~ ${serverData.queueCount} in queue` : null
+  const serverStatus = React.useMemo(() => {
+    // Unable to get data from server
+    if(serverData.status === undefined) {
+      return null;
+    }
 
-  const serverStatus = maintenance ? (
-    <h4 className="subheader">Server Maintenance</h4>
-  ) : (
-    <>
-      <h4 className="subheader">{onlineStatus}</h4>
-      {queue && <h5 className="subheader">{queue}</h5>}
-    </>
-  )
+    // Server is down
+    if (serverData.status === 4) { 
+      return <h4 className="subheader">Server Maintenance</h4>;
+    }
+
+    // Check if we have a queue and contruct the queue message
+    const hasQueue = serverData.queueCount > 0;
+    const onlineStatus = `${serverData.connectionCount} / ${serverData.connectionCountMax} Online`
+    return <>
+        <h4 className="subheader">{onlineStatus}</h4>
+        {hasQueue && <h5 className="subheader">~ {serverData.queueCount} in queue</h5>}
+      </>;
+  }, [serverData]);
 
   return (
     <div className={styles.content}>
