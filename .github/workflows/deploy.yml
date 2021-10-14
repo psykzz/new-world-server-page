@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: npm build
+      - run: npm run build
       - name: Gatsby Publish
         uses: enriikke/gatsby-gh-pages-action@v2.2.0
         with:
