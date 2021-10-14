@@ -28,6 +28,7 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run build
+      - run: echo "ishtakar.eu" > ./public/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
