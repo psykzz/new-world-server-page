@@ -2,26 +2,26 @@ import React from "react"
 import * as styles from "./styles.module.css"
 
 export const DarkmodeToggle = () => {
-  const [prefersDarkmode, setPrefersDarkmode] = React.useState(systemPrefersDarkmode)
+  const [prefersDarkmode, setPrefersDarkmode] = React.useState(true);
   React.useEffect(() => {
     let shouldUseDarkmode = JSON.parse(
       window.localStorage.getItem("prefers-dark-mode")
-    )
+    );
     if (shouldUseDarkmode === null) {
       shouldUseDarkmode = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
     }
     setPrefersDarkmode(shouldUseDarkmode)
-  }, [])
+  }, []);
 
   React.useEffect(() => {
     if (prefersDarkmode) {
-      document.body.classList.add("dark")
+      document.body.classList.add("dark");
     } else {
-      document.body.classList.remove("dark")
+      document.body.classList.remove("dark");
     }
-  }, [prefersDarkmode])
+  }, [prefersDarkmode]);
 
   const handleClick = () => {
     setPrefersDarkmode(!prefersDarkmode)
