@@ -1,0 +1,20 @@
+.wrapper {
+    margin-top: 15vh;
+
+    padding: 1em;
+}
+
+
+
+.content {
+    margin-top: 2em;
+}
+
+label {
+    display: inline-block;
+    min-width: 100px;
+}
+
+h1 {
+    font-size: 3em;
+}
