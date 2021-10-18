@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-company-js",
+    "path": "/company/example-company",
+    "result": {"data":{"markdownRemark":{"html":"<p>Formed in 2021, this is peak content.</p>","frontmatter":{"slug":"example-company","title":"Example Company","governor":"Joe Blogs","consul":["Jackson","John Jr"],"date":"July 12, 2017"}}},"pageContext":{"slug":"example-company"}},
+    "staticQueryHashes": []}
