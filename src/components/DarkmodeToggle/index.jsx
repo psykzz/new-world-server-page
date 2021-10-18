@@ -2,16 +2,15 @@ import React from "react"
 import * as styles from "./styles.module.css"
 
 export const DarkmodeToggle = () => {
-  const systemPrefersDarkmode = window?.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches
   const [prefersDarkmode, setPrefersDarkmode] = React.useState(systemPrefersDarkmode)
   React.useEffect(() => {
     let shouldUseDarkmode = JSON.parse(
       window.localStorage.getItem("prefers-dark-mode")
     )
     if (shouldUseDarkmode === null) {
-      shouldUseDarkmode = systemPrefersDarkmode;
+      shouldUseDarkmode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
     }
     setPrefersDarkmode(shouldUseDarkmode)
   }, [])
