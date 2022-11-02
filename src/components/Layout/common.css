@@ -8,6 +8,14 @@
 
   --text-color-white: #fff;
   --text-color-subtle: #999;
+
+  --bg-color: var(--light--bg-color);
+  --text-color: var(--light--text-color);
+
+}
+@media (prefers-color-scheme: dark) {
+  --bg-color: var(--dark--bg-color);
+  --text-color: var(--dark--text-color);
 }
 
 * {
@@ -18,8 +26,8 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  color: var(--light-text-color);
-  background: var(--light-bg-color);
+  color: var(--text-color);
+  background: var(--bg-color);
 }
 
 body.dark {
