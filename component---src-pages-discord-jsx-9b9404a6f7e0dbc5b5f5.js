@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkishtakar=self.webpackChunkishtakar||[]).push([[281],{9796:function(e,t,n){n.r(t);var r=n(7294);t.default=function(){return r.useEffect((function(){window.location.href="https://discord.gg/wg8ybKYzKK"}),[]),r.createElement(r.Fragment,null,r.createElement("meta",{"http-equiv":"refresh",content:"0; URL=https://discord.gg/wg8ybKYzKK"}),r.createElement("link",{rel:"canonical",href:"https://discord.gg/wg8ybKYzKK"}))}}}]);
+//# sourceMappingURL=component---src-pages-discord-jsx-9b9404a6f7e0dbc5b5f5.js.map
