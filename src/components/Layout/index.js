@@ -9,8 +9,8 @@ import * as styles from "./layout.module.css"
 const Layout = ({ children }) => (
   <>
     <Helmet>
-      <title>Ishtakar | New World - EU Central</title>
-      <meta name="description" content={"Ishtakar server website of New world. Providing information, guides and in the future, company services."} />
+      <title>Apophis | New World - EU Central</title>
+      <meta name="description" content={"Apophis server website of New world. Providing information, guides and in the future, company services."} />
     </Helmet>
     <div className={styles.container}>
         {children}
