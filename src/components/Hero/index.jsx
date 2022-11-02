@@ -5,7 +5,7 @@ import React from "react"
 import * as styles from "./hero.module.css"
 
 const worldDataEndpoint =
-  "https://nwdb.info/server-status/servers.json?worldId=3f1cd819f97e"
+  "https://nwdb.info/server-status/servers_24h.json?worldId=a54d4cf101b4"
 
 const parseServerData = data => {
   const [
@@ -75,11 +75,11 @@ export const Hero = () => {
         <link rel="prefetch" href={worldDataEndpoint} as="fetch" />
       </Helmet>
       <h3>New World</h3>
-      <h1>Ishtakar</h1>
+      <h1>{serverData.worldName}</h1>
       {serverStatus}
-      <Link className={styles.discord} to="/discord">
+      {/*<Link className={styles.discord} to="/discord">
         Join Discord
-      </Link>
+      </Link>*/}
     </div>
   )
 }
