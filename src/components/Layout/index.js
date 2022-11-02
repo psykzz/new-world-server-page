@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
   <>
     <Helmet>
       <title>Ulthar | New World - EU Central</title>
-      <meta name="description" content={"Apophis server website of New world. Providing information, guides and in the future, company services."} />
+      <meta name="description" content={"Ulthar server website of New world. Providing information, guides and in the future, company services."} />
     </Helmet>
     <div className={styles.container}>
         {children}
