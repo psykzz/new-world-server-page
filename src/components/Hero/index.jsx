@@ -72,9 +72,9 @@ export const Hero = () => {
       <h3>New World</h3>
       <h1>{serverData?.worldName}</h1>
       {serverStatus}
-      {/*<Link className={styles.discord} to="/discord">
+      <Link className={styles.discord} to="/discord">
         Join Discord
-      </Link>*/}
+      </Link>
     </div>
   )
 }
