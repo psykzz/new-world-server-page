@@ -1,9 +1,10 @@
 .content {
-  display: flex;
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 30vh;
+  margin-top: max(50vh, 10em);
+  transform: translateY(-50%);
+  display: flex;
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
