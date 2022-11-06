@@ -1,17 +1,17 @@
-import React from "react"
-import * as styles from "./styles.module.css"
+import React from "react";
+import * as styles from "./styles.module.css";
 
 export const DarkmodeToggle = () => {
   const [prefersDarkmode, setPrefersDarkmode] = React.useState(true);
   React.useEffect(() => {
     let shouldUseDarkmode = JSON.parse(
-      window.localStorage.getItem("prefers-dark-mode")
+      window.localStorage.getItem("prefers-dark-mode") ?? false
     );
-    if (shouldUseDarkmode === null) {
-      shouldUseDarkmode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-    }
+    // if (shouldUseDarkmode === null) {
+    //   shouldUseDarkmode = window.matchMedia(
+    //     "(prefers-color-scheme: dark)"
+    //   ).matches;
+    // }
     setPrefersDarkmode(shouldUseDarkmode)
   }, []);
 
