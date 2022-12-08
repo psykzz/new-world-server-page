@@ -1,6 +1,6 @@
 import React from "react";
 
-const DISCORD = "https://discord.gg/CE98Z67qZy";
+const DISCORD = "https://discord.gg/sZSa8Eh6yq";
 
 const DiscordRedirect = () => {
   React.useEffect(() => {
