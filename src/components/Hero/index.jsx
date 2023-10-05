@@ -40,7 +40,7 @@ export const Hero = () => {
   const {data: serverData} = useSWR(worldDataEndpoint, { refreshInterval: 30000, fetcher: url => fetch(url)
     .then(res => res.json())
     .then(data => data.success && data.data.servers.map(parseServerData))
-    .then(servers => servers.filter(server => server.worldId === worldId)});
+    .then(servers => servers.filter(server => server.worldId === worldId))});
 
   const serverStatus = React.useMemo(() => {
     // Unable to get data from server
