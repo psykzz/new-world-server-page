@@ -6,7 +6,7 @@ import useSWR from "swr"
 import * as styles from "./hero.module.css"
 
 const worldDataEndpoint =
-  "https://nwdb.info/server-status/servers_24h.json?worldId=40b8eca04fda"
+  "https://nwdb.info/server-status/servers_24h.json?worldId=5fe82df522ca"
 
 const parseServerData = data => {
   const [
