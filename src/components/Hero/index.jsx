@@ -7,6 +7,7 @@ import * as styles from "./hero.module.css"
 
 const worldDataEndpoint =
   "https://nwdb.info/server-status/servers_24h.json?worldId=5fe82df522ca"
+const worldId = "5fe82df522ca"
 
 const parseServerData = data => {
   const [
@@ -38,8 +39,8 @@ const parseServerData = data => {
 export const Hero = () => {
   const {data: serverData} = useSWR(worldDataEndpoint, { refreshInterval: 30000, fetcher: url => fetch(url)
     .then(res => res.json())
-    .then(data => data.success && data.data.servers[0])
-    .then(parseServerData)});
+    .then(data => data.success && data.data.servers.map(parseServerData))
+    .then(servers => servers.filter(server => server.worldId === worldId)});
 
   const serverStatus = React.useMemo(() => {
     // Unable to get data from server
